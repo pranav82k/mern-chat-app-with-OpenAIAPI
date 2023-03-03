@@ -1,0 +1,119 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Chat History Message CSS */
+.opponent {
+  font-size: 1rem;
+  position: relative;
+  display: inline-block;
+  padding: 1.5rem;
+  background: #00cc99;
+  color: #f6f6f6;
+  -webkit-animation: bounce-in 1s 1;
+  animation: bounce-in 1s 1;
+  -webkit-transform-origin: left bottom;
+  transform-origin: left bottom;
+}
+
+.opponent:after {
+  top: 88%;
+  left: 0;
+  position: absolute;
+  content: "";
+  border: 1.5rem solid;
+  border-color: #00cc99 transparent transparent #00cc99;
+}
+
+.sentbyme {
+  font-size: 1rem;
+  position: relative;
+  display: inline-block;
+  padding: 1.5rem;
+  background: #ff5154;
+  color: #f6f6f6;
+  -webkit-animation: bounce-in 1s 1;
+  animation: bounce-in 1s 1;
+
+  -webkit-transform-origin: right top;
+  transform-origin: right top;
+}
+
+.sentbyme:after {
+  top: -35%;
+  left: auto;
+  position: absolute;
+  content: "";
+  border: 1.5rem solid;
+  border-color: transparent #ff5154 #ff5154 transparent;
+
+  right: 0;
+}
+
+
+/* Input Box CSS */
+.form {
+  display: flex;
+  border-top: 2px solid #D3D3D3;
+  background-color: #FAFAFA;
+}
+
+.input {
+  border: none;
+  border-radius: 0;
+  padding: 5%;
+  width: 80%;
+  font-size: 1.2em;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+
+.sendButton {
+  color: #fff !important;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #2979FF;
+  /* padding: 20px; */
+  display: inline-block;
+  border: none;
+  width: 20%;
+}
